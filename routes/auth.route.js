@@ -9,7 +9,7 @@ const {
 
 router.route('/register').post(register);
 router.route('/login').post(login);
-router.post('/forgotPassword', forgotPassword);
-router.put('/resetPassword/:token', resetPassword);
+router.route('/forgotPassword').post( forgotPassword);
+router.route('/resetPassword/:token').put(resetPassword);
 
 module.exports = router;

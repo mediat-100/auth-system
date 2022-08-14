@@ -12,7 +12,7 @@ router.use(Auth);
 
 router
   .route('/')
-  .get(restrictTo('admin', 'manager', 'staff'), getAllUsers)
+  .get(restrictTo('admin', 'manager'), getAllUsers)
   .get(restrictTo('admin', 'manager', 'staff'), getUser)
   .put(restrictTo('admin', 'manager'), updateUser)
   .delete(restrictTo('admin'), deleteUser);

@@ -136,8 +136,6 @@ exports.resetPassword = async (req, res, next) => {
 
     await user.save();
 
-    console.log('USERRESET', user);
-
     // 3) Update changedPasswordAt property for the user --> pre save middleware executed in the userModel
 
     // 4) Log the user in, send JWT
