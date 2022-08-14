@@ -12,7 +12,7 @@ A Simple Authentication System node-express REST API Application, implementing r
 ## Routes
 
 | Routes                                    | Description                  | Auth roles                  |
-| ----------------------------------------- | ---------------------------- | --------------------- ------|
+| ----------------------------------------- | ---------------------------- | --------------------------- |
 | [POST] /api/v1/auth/register              | Create a new user            | none                        |
 | [POST] /api/v1/auth/login                 | Login a user                 | none                        |
 | [POST] /api/v1/auth/forgotPassword        | Sends a password reset email | none                        |
